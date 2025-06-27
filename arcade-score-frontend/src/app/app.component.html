@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+
+<h2>Ranking dos Jogadores</h2>
+<ul>
+  <li *ngFor="let item of ranking">
+    {{ item.player }} - {{ item.score }} pontos ({{ item.date | date:'short' }})
+  </li>
+</ul>
+<h2>Adicionar Novo Jogador</h2>
+<form (ngSubmit)="addPlayer()">
+  <label for="playerName">Nome do Jogador:</label>
+  <input type="text" id="playerName" [(ngModel)]="newPlayerName" name="playerName" required>
+  <button type="submit">Adicionar</button>
+</form>   
+<h2>Adicionar Novo Jogo</h2>
+<form (ngSubmit)="addGame()">
+
+  <label for="gameName">Nome do Jogo:</label>
+  <input type="text" id="gameName" [(ngModel)]="newGameName" name="gameName" required>
+  <button type="submit">Adicionar</button>
+</form>

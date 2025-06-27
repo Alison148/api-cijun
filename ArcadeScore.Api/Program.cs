@@ -5,7 +5,7 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona serviÃ§os ao container
+// Adiciona serviços ao container
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -14,7 +14,7 @@ builder.Services.AddSwaggerGen(c =>
     {
         Title = "ArcadeScore API",
         Version = "v1",
-        Description = "API REST para registrar pontuaÃ§Ãµes de fliperama"
+        Description = "API REST para registrar pontuações de fliperama"
     });
 });
 

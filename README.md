@@ -24,7 +24,7 @@ Aplicação para registrar pontuações de fliperama, consultar ranking e estat�
 
 > **Obs:**
 > - Certifique-se de que a API está rodando antes de usar o front-end.
-> - O front-end está configurado para consumir a API em `https://localhost:5055`.
+> - O front-end está configurado para consumir a API em `https://localhost:5000`.
 
 ## Funcionalidades
 - Registrar pontuação (data, jogador, pontuação)
